@@ -16,3 +16,11 @@ spec:
         - image: nginx:1.27-alpine
           imagePullPolicy: Always
           name: nginx
+          volumeMounts:
+            - name: web-content
+              mountPath: /usr/share/nginx/html/index.html
+              subPath: index.html
+      volumes:
+        - name: web-content
+          configMap:
+            name: pocetna-strana
