@@ -12,7 +12,7 @@ data:
      <title>Greška</title>
   </head>
   <body>
-      <h1>Radi</h1>
-      <p>Dobro dosli na pocetnu stranu aplikacije.Nalazite se na $(hostname)</p>
+      <h1>Dobro dosli u Cetin</h1>
+      <p>Ako neko ima neke pitanje moze da ga postavi </p>
   </body>
   </html>
