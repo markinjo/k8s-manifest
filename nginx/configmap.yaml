@@ -4,15 +4,97 @@ metadata:
   name: pocetna-strana
 data:
  index.html: |
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Pocetna</title>
-  </head>
-  <body>
-      <h1>Dobro dosli u Cetin</h1>
-      <p>Ako neko ima neke pitanje moze da ga postavi </p>
-  </body>
-  </html>
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CETIN</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #2b0a8a; /* CETIN ljubičasta */
+      color: white;
+    }
+
+    /* HEADER */
+    .header {
+      margin: 20px;
+      background: #eeeeee;
+      border-radius: 12px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      color: #2b0a8a;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 14px solid red;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 60px;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #d0d0ff;
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 20px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">
+      <div class="triangle"></div>
+      CETIN
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Dobro došli u CETIN</h1>
+    <p>Ako imate neka pitanja, stojimo na raspolaganju.</p>
+  </div>
+
+</body>
+</html>
